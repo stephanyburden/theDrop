@@ -7,6 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Choose A Photographer Page</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Landing Page</a></li>
+                <li><a href="/photographer/events">Events</a></li>
+                <li><a href="/photographer/all-photographers">All Photographer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<h1>Choose a Photographer for  <%= event %> </h1>
+
+<% for(let i = 0; i < photographers.length; i++) { %>
+    <a href="/photographer/info/<%= photographers[i].name %>">  
+       <h1><%= photographers[i].name %></h1>
+       <img src="<%= photographers[i].picture %>" >
+    </a>
+    
+    <% } %> 
+
+
 </body>
 </html>
+
+
+
+

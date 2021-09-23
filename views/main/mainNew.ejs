@@ -7,6 +7,55 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>New.ejs</h1>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Landing Page</a></li>
+                <li><a href="/photographer/events">Events</a></li>
+                <li><a href="/photographer/all-photographers">All Photographer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+     <h1>Book a Consult with  </h1>
+
+
+
+     <form action="/info/:photographerName" method="POST">
+        <div>
+            <input name="name" type="text">
+            <label for="name">Name:</label>
+        </div>
+        <div>
+            <input name="phone" type="text">
+            <label for="phone">Phone:</label>
+        </div>
+        <div>
+            <input name="email" type="text">
+            <label for="email">Email:</label>
+        </div>
+        <div>
+            <textarea name="visionSummary" id="" cols="30" rows="10"></textarea>
+            <label for="visionSummary">Vision Summary:</label>
+        </div>
+        <input type="submit" value="Book Appointment">
+        
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

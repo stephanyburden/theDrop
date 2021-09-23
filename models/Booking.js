@@ -4,10 +4,10 @@ const mongoose = require('mongoose');
 
 // -- The Schema -- // 
 const bookingSchema = new mongoose.Schema({
-    name: { type: String, required: true },
-    email: { type: String, required: true },
-    date: { type: String },
-    time: { type: String }
+    name: { type: String },
+    phone: { type: String },
+    Email: { type: String },
+    visionSummary: { type: String } 
 })
 
 

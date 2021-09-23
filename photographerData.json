@@ -1,0 +1,124 @@
+{
+    "photographerData": [
+        {
+            "name": "Marcus James",
+            "picture": "https://i.imgur.com/UugZdUwl.jpg",
+            "specialities": "Weddings"
+        },
+        {
+            "name": "Kayla Martin",
+            "picture": "https://i.imgur.com/R5PYNtSt.jpg",
+            "specialities": "Weddings"
+        },
+        {
+            "name": "Faith Jones",
+            "picture": "https://i.imgur.com/4gYYWBut.jpg",
+            "specialities": "Weddings"
+        },
+        {
+            "name": "Don King",
+            "picture": "https://i.imgur.com/p0ynsnvt.jpg",
+            "specialities": "Weddings"
+        },
+        {
+            "name": "Michael Solorio",
+            "picture": "https://i.imgur.com/zeQlz7Ct.jpg",
+            "specialities": "Graduation"
+        },
+        {
+            "name": "Marcus James",
+            "picture": "https://i.imgur.com/UugZdUwl.jpg",
+            "specialities": "Graduation"
+        },
+        {
+            "name": "Satya Sette",
+            "picture": "https://i.imgur.com/AafOtMTt.jpg",
+            "specialities": "Graduation"
+        },
+        {
+            "name": "Mars Daivdson",
+            "picture": "https://i.imgur.com/Ycjiygvt.jpg",
+            "specialities": "Graduation"
+        },
+        {
+            "name": "Rashad Burden",
+            "picture": "https://i.imgur.com/rxJwtJGt.jpg",
+            "specialities": "Newborn"
+        },
+        {
+            "name": "Mars Daivdson",
+            "picture": "https://i.imgur.com/Ycjiygvt.jpg",
+            "specialities": "Newborn"
+        },
+        {
+            "name": "Lisa Smith",
+            "picture": "https://i.imgur.com/2S1DSvxt.jpg",
+            "specialities": "Newborn"
+        },
+        {
+            "name": "Nicole Ndeto",
+            "picture": "https://i.imgur.com/h6dH8IDt.jpg",
+            "specialities": "Newborn"
+        },
+        {
+            "name": "Mike Roper",
+            "picture": "https://i.imgur.com/N0EPpmet.jpg",
+            "specialities": "Birthdays"
+        },
+        {
+            "name": "Terry Fine",
+            "picture": "https://i.imgur.com/4V6SOk1t.jpg",
+            "specialities": "Birthdays"
+        },
+        {
+            "name": "Kelly Hughes",
+            "picture": "https://i.imgur.com/lrhtEmet.jpg",
+            "specialities": "Birthdays"
+        },
+        {
+            "name": "Satya Sette",
+            "picture": "https://i.imgur.com/AafOtMTt.jpg",
+            "specialities": "Birthdays"
+        },
+        {
+            "name": "King Black",
+            "picture": "https://i.imgur.com/8LefmX0t.jpg",
+            "specialities": "Maternity"
+        },
+        {
+            "name": "Ricky Sky",
+            "picture": "https://i.imgur.com/zeQlz7Ct.jpg",
+            "specialities": "Maternity"
+        },
+        {
+            "name": "Regina Lake",
+            "picture": "https://i.imgur.com/ubqogZ9t.jpg",
+            "specialities": "Maternity"
+        },
+        {
+            "name": "MeMe Stone",
+            "picture": "https://i.imgur.com/d9dnROMt.jpg",
+            "specialities": "Maternity"
+        },
+        {
+            "name": "Nicole Ndeto",
+            "picture": "https://i.imgur.com/h6dH8IDt.jpg",
+            "specialities": "Portraits"
+        },
+        {
+            "name": "Bernice Love",
+            "picture": "https://i.imgur.com/VLXEDGKt.jpg",
+            "specialities": "Portraits"
+        },
+        {
+            "name": "Kyle Rich",
+            "picture": "https://i.imgur.com/Hi7OG7kt.jpg",
+            "specialities": "Portraits"
+        },
+        {
+            "name": "James Pyles",
+            "picture": "https://i.imgur.com/xmaxVy1t.jpg",
+            "specialities": "Portraits"
+        }
+    ]
+}

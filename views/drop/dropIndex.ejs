@@ -16,9 +16,26 @@
             </ul>
         </nav>
     </header>
+    
+
+
+    
+    
+    <h1>All Photographers(Seed Data to populate?)</h1>
+
+
+    <% for(let i = 0; i < allPhotographers.length; i++) { %>
+        <a>
+           <h1><%= allPhotographers[i].name %></h1>
+           <img src="<%= allPhotographers[i].picture %>" >
+            <%= allPhotographers[i].specialities %>
+        </a>
+        
+        <% } %> 
+    
 
 
 
-    <h1>Edit.ejs</h1>
+
 </body>
 </html>

@@ -10,7 +10,11 @@ router.get('/', (req, res) => {
 
 // New Route (Goes to Booking Form page)
 router.get('/new', (req, res) => {
-    res.render('./main/mainNew.ejs');
+    db.Photographer.findOne({ name: req.params.photographerName }, (err, onePhotographer) => {
+        if (err) return console.log(err);
+        console.log(onePhotographer);
+        res.render('./main/mainNew.ejs', { thePhotographer: onePhotographer } );
+    })  
 });
 
 // Show Route (Goes to Appt Info/Details page)
@@ -19,16 +23,39 @@ router.get('/:id', (req, res) => {
 });
 
 // Create Route //
+router.post('/', (req, res) => {
+    db.Booking.create(req.body, (err, createBooking) => {
+        if (err) return console.log(err);
+        
+        //console.log(req.body)
+        
+        res.redirect('/info/:');
+    });
+})
+
 
 
 
 // Edit Route (Goes to Pulls Up Edit Form page)
-router.get('/:id/edit', (req, res) => {
-    res.render('./main/mainEdit.ejs');
-});
+router.get('/:BookId/edit', (req, res) => {
+    db.Booking.findById(req.params.bookingId, (err, foundBooking) => {
+        if (err) return console.log(err);
+
+        res.render('./main/mainEdit.ejs', { oneBooking: foundBooking });
+    })
+})
+
 
 
 // Update Route //
+router.put('/:bookingId', (req, res) => {
+    db.Booking.findByIdAndUpdate(req.params.bookingId, req.body, (err, updateBooking) => {
+        if (err) return console.log(err);
+        
+        res.redirect('' + req.params.bookingId);
+    })
+})
+
 
 
 
