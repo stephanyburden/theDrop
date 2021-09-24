@@ -19,11 +19,12 @@
 
 
 
-     <h1>Book a Consult with  </h1>
+     <h1>Book a Consult with <%= thePhotographer.name %> </h1>
 
 
 
-     <form action="/info/:photographerName" method="POST">
+     <form action="/booking" method="POST">
+        <input type="text" name="photographer" value="<%= thePhotographer._id %>" hidden>
         <div>
             <input name="name" type="text">
             <label for="name">Name:</label>

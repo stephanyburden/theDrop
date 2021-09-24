@@ -4,7 +4,13 @@ const mongoose = require('mongoose')
 const photographerSchema = new mongoose.Schema({
     name: { type: String, required: true },
     picture: { type: String },
-    specialities: [] 
+    specialities: [],
+    bookings: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Booking'
+        }
+    ]
     
 })
 

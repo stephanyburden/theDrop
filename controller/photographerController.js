@@ -42,7 +42,6 @@ router.get('/all-photographers', (req, res) => {
 
 });
 
-// Search Route (Search Photographer by speacialty)
 
 
 

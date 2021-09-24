@@ -6,8 +6,12 @@ const mongoose = require('mongoose');
 const bookingSchema = new mongoose.Schema({
     name: { type: String },
     phone: { type: String },
-    Email: { type: String },
-    visionSummary: { type: String } 
+    email: { type: String },
+    visionSummary: { type: String },
+    photographer: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Photographer'
+    } 
 })
 
 

@@ -10,11 +10,13 @@ const bookingController = require('./controller/bookingController');
 const app = express();
 const port = 4000;
 const rowdyResults = rowdy.begin(app);
+app.use(express.urlencoded({ extended: false }));
 
 
 
 // -- Middleware -- // 
 app.set('view engine', 'ejs');
+app.use(express.static('public'))
 
 
 // -- Controllers -- //

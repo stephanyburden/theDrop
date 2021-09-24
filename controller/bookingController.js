@@ -3,14 +3,9 @@ const db = require('../models/index.js');
 const router = express.Router();
 
 
-// Index Route (Goes to All Booking Appt List page)
-router.get('/', (req, res) => {
-    res.render('./main/mainIndex.ejs');
-});
-
 // New Route (Goes to Booking Form page)
-router.get('/new', (req, res) => {
-    db.Photographer.findOne({ name: req.params.photographerName }, (err, onePhotographer) => {
+router.get('/:photographerId/new', (req, res) => {
+    db.Photographer.findById( req.params.photographerId, (err, onePhotographer) => {
         if (err) return console.log(err);
         console.log(onePhotographer);
         res.render('./main/mainNew.ejs', { thePhotographer: onePhotographer } );
@@ -19,51 +14,30 @@ router.get('/new', (req, res) => {
 
 // Show Route (Goes to Appt Info/Details page)
 router.get('/:id', (req, res) => {
-    res.render('./main/mainShow.ejs');
+    db.Photographer.findOne( {name: req.params.photographerName}, (err, foundPhotographer) => {
+        if (err) return console.log(err);
+        console.log("Here i am -->", req.params.photographerName)
+        
+        res.render('./main/mainShow.ejs', { oneBooking: foundPhotographer })
+    })
+    // Grab the booking from the database by its ID 
+    // then we will send that data into the EJS template
+
 });
 
 // Create Route //
 router.post('/', (req, res) => {
+    // Grabs the data that is coming in from the frontend(req.body)
+    // Then it adds that data to the database 
     db.Booking.create(req.body, (err, createBooking) => {
         if (err) return console.log(err);
         
-        //console.log(req.body)
+        console.log(req.body)
+        console.log(createBooking)
         
-        res.redirect('/info/:');
+        res.redirect('/booking/' + createBooking._id);
     });
 })
-
-
-
-
-// Edit Route (Goes to Pulls Up Edit Form page)
-router.get('/:BookId/edit', (req, res) => {
-    db.Booking.findById(req.params.bookingId, (err, foundBooking) => {
-        if (err) return console.log(err);
-
-        res.render('./main/mainEdit.ejs', { oneBooking: foundBooking });
-    })
-})
-
-
-
-// Update Route //
-router.put('/:bookingId', (req, res) => {
-    db.Booking.findByIdAndUpdate(req.params.bookingId, req.body, (err, updateBooking) => {
-        if (err) return console.log(err);
-        
-        res.redirect('' + req.params.bookingId);
-    })
-})
-
-
-
-
-// Delete Route //
-
-
-
-
 
 
 
