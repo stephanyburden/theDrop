@@ -14,11 +14,19 @@ router.get('/:photographerId/new', (req, res) => {
 
 // Show Route (Goes to Appt Info/Details page)
 router.get('/:id', (req, res) => {
-    db.Photographer.findOne( {name: req.params.photographerName}, (err, foundPhotographer) => {
+    db.Booking.findById(req.params.id, (err, foundBooking) => {
         if (err) return console.log(err);
-        console.log("Here i am -->", req.params.photographerName)
+        console.log("Here i am -->", foundBooking)
+
+        db.Photographer.findById(foundBooking.photographer, (err, foundPhotographer) => {
+            if (err) return console.log(err);
+            res.render('./main/mainShow.ejs', { 
+                oneBooking: foundBooking,
+                photographer: foundPhotographer
+            })
+        })
         
-        res.render('./main/mainShow.ejs', { oneBooking: foundPhotographer })
+
     })
     // Grab the booking from the database by its ID 
     // then we will send that data into the EJS template

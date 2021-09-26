@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');;
 
-/* -----------LANDING PAGE && Nav Bar----------- */
+/* -----------LANDING PAGE && NAV BAR----------- */
 
-.landing { 
+body { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -127,4 +127,47 @@ nav ul li a:hover::after {
     margin: 25px  5px;
 }
 
-/* -----------------------------*/
+/* ----------CHOOSE EVENT PAGE------------*/
+
+.events-container {
+    background-image: url("img/header1.jpg");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    
+  }
+
+  .title1 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 50px;
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family: 'Krona One'
+  }
+
+
+.title2 {
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 50px;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-family: 'Krona One'
+}
+
+
+.text {
+    color: white;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat'
+}
