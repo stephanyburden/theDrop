@@ -4,29 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body class="select">
+    <div class="select-container">
         <nav>
+            <a href="/"><img src="/img/logo1.png" class="logo"></a>
             <ul>
-                <li><a href="/">Landing Page</a></li>
                 <li><a href="/photographer/events">Events</a></li>
                 <li><a href="/photographer/all-photographers">All Photographer</a></li>
             </ul>
         </nav>
-    </header>
+
+        
+        <h1 class="title1">The</h1>
+        <h1 class="title2">Drop</h1>
+        <h2 class="text">Choose A Photographer for for  <%= event %> </h2>
+    </div>
 
 
-<h1>Choose a Photographer for  <%= event %> </h1>
+    <div class="hero-select">
+        <% for(let i = 0; i < photographers.length; i++) { %>
+        <a href="/photographer/info/<%= photographers[i].name %>">  
+        
+           <img class="select-pic" src="<%= photographers[i].picture %>" ><section class="articlename"><h2><%= photographers[i].name %></h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum recusandae rerum tempore ab laboriosam minus eum repellat sunt expedita. Tenetur eaque corrupti veniam reiciendis unde repudiandae iste. Quasi, nobis magnam?</section>
+        </a>
+        
+        <% } %> 
+    </div>
 
-<% for(let i = 0; i < photographers.length; i++) { %>
-    <a href="/photographer/info/<%= photographers[i].name %>">  
-       <h1><%= photographers[i].name %></h1>
-       <img src="<%= photographers[i].picture %>" >
-    </a>
-    
-    <% } %> 
+
 
 
 </body>

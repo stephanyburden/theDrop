@@ -178,12 +178,9 @@ nav ul li a:hover::after {
     text-decoration: none;
     font-size: 25px;
     color: #fff;
-    /* display: flex;
-    height: 88%;
-    align-items: center; */
+    position: absolute;
 }
 
-/*  when i add the mask-image the picture gets some opacity but when i add the hover it doesnt do anythign */
 .pic1 {
     background-image: url(img/wedding4.jpg);
     background-position: center;
@@ -191,28 +188,27 @@ nav ul li a:hover::after {
     width: auto;
     height: 500px;
     text-align: center;
-    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%);
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.7) 0%,rgba(0,0,0,0.9) 100%);
-    transition-duration: 0.4s; */
-    
-   
-}
- 
-/*  when i add the over lay on its take away the link the event category */
- /* .pic1 .overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    top: 0;
-    left: 0;
+}
+.overlay1{
     width: 100%;
     height: 100%;
-    background-color: #63A69A;
-    opacity: 0.6;
-} */
+    position: absolute;
+    opacity: 0.7;
+    background-color: #60A699;
+    z-index: 2;
+}
 
-/* .pic1:hover {
-    mask-image: none;
-    
-} */
+ .pic1:hover .overlay1 {
+     display: none;
+    opacity: none;
+    background-color: none;
+    z-index: 2;
+}
+
 
 .pic2 {
     background-image: url(img/bday1.jpg);
@@ -221,6 +217,27 @@ nav ul li a:hover::after {
     width: auto;
     height: 500px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.overlay2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    background-color: #734319;
+    z-index: 2;
+}
+
+.pic2:hover .overlay2 {
+    display: none;
+   opacity: none;
+   background-color: none;
+   z-index: 2;
 }
 
 
@@ -231,6 +248,26 @@ nav ul li a:hover::after {
     width: auto;
     height: 500px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay3{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    background-color: #D9C7B8;
+    z-index: 2;
+}
+
+.pic3:hover .overlay3 {
+    display: none;
+   opacity: none;
+   background-color: none;
+   z-index: 2;
 }
 
 
@@ -241,6 +278,27 @@ nav ul li a:hover::after {
     width: auto;
     height: 500px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.overlay4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    background-color: #8C3A27;
+    z-index: 2;
+}
+
+.pic4:hover .overlay4 {
+    display: none;
+   opacity: none;
+   background-color: none;
+   z-index: 2;
 }
 
 
@@ -251,6 +309,28 @@ nav ul li a:hover::after {
     width: auto;
     height: 500px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.overlay5{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    background-color: #CC8E21;
+    z-index: 2;
+}
+
+.pic5:hover .overlay5 {
+    display: none;
+   opacity: none;
+   background-color: none;
+   z-index: 2;
 }
 
 
@@ -261,9 +341,84 @@ nav ul li a:hover::after {
     width: auto;
     height: 500px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
+
+.overlay6{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    background-color: #897870;
+    z-index: 2;
+}
+
+.pic6:hover .overlay6 {
+    display: none;
+   opacity: none;
+   background-color: none;
+   z-index: 2;
+}
+
 
 .hero {
     display: grid;
     grid-template-columns: auto auto;
 }
+
+
+
+
+
+/* -------------Select Photographer Page--------------- */
+
+
+.select-container {
+    background-image: url("img/landing02.jpg");
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.7) 0%,rgba(0,0,0,0.9) 100%);
+    
+  }
+  
+  .hero-select {
+      display: grid;
+      grid-template-columns: auto auto;
+      display: inline-block;
+      background-color: #8C5E54;
+  }
+
+  .hero-select section:nth-child(odd) {
+      background-color: #BF988F;
+  }
+
+
+  .select-pic{
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+}
+
+.select-pic,
+.articlename {
+    display:inline-block;
+    width:50%;
+    vertical-align:middle;
+}
+.select-pic {
+    height:auto;
+}
+.articlename {
+    color:#fff;
+    text-align: center;
+}
+
+    
