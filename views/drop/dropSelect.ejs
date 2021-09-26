@@ -26,10 +26,13 @@
 
     <div class="hero-select">
         <% for(let i = 0; i < photographers.length; i++) { %>
-        <a href="/photographer/info/<%= photographers[i].name %>">  
-        
-           <img class="select-pic" src="<%= photographers[i].picture %>" ><section class="articlename"><h2><%= photographers[i].name %></h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum recusandae rerum tempore ab laboriosam minus eum repellat sunt expedita. Tenetur eaque corrupti veniam reiciendis unde repudiandae iste. Quasi, nobis magnam?</section>
-        </a>
+            <div class="test">
+                <a href="/photographer/info/<%= photographers[i].name %>">  
+                
+                   <img class="select-pic" src="<%= photographers[i].picture %>" ><section class="articlename"><h2><%= photographers[i].name %></h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum recusandae rerum tempore ab laboriosam minus eum repellat sunt expedita. Tenetur eaque corrupti veniam reiciendis unde repudiandae iste. Quasi, nobis magnam?</section>
+                </a>
+            </div>
+
         
         <% } %> 
     </div>

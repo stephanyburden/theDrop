@@ -7,27 +7,34 @@
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body class="info-page">
+    <div class="infoPage-container">
         <nav>
+            <a href="/"><img src="/img/logo1.png" class="logo"></a>
             <ul>
-                <li><a href="/">Landing Page</a></li>
                 <li><a href="/photographer/events">Events</a></li>
                 <li><a href="/photographer/all-photographers">All Photographer</a></li>
             </ul>
         </nav>
-    </header>
+
+        
+        <h1 class="title1">The</h1>
+        <h1 class="title2">Drop</h1>
+        <h2 class="text"><%= thePhotographer.name %> Info Page</h2>
+    </div>
 
 
 
 
 
+    <div class="hero-info">
+        <h1>Photographer Info Page <%= thePhotographer.name %> </h1>
+        <img class="select-pic" src="<%= thePhotographer.picture %>" >
+    
+    
+        <a href="/booking/<%= thePhotographer._id %>/new">Book Consult</a>
+    </div>
 
-    <h1>Photographer Info Page <%= thePhotographer.name %> </h1>
-    <img src="<%= thePhotographer.picture %>" >
-
-
-    <a href="/booking/<%= thePhotographer._id %>/new">Book Consult</a>
 
 
 </body>
