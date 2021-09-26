@@ -135,6 +135,8 @@ nav ul li a:hover::after {
     height: 700px;
     background-size: cover;
     background-position: center;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.7) 0%,rgba(0,0,0,0.9) 100%);
     
   }
 
@@ -170,4 +172,98 @@ nav ul li a:hover::after {
     left: 75%;
     transform: translate(-50%, -50%);
     font-family: 'Montserrat'
+}
+
+.content {
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    /* display: flex;
+    height: 88%;
+    align-items: center; */
+}
+
+/*  when i add the mask-image the picture gets some opacity but when i add the hover it doesnt do anythign */
+.pic1 {
+    background-image: url(img/wedding4.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    text-align: center;
+    /* mask-image: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.9) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,.7) 0%,rgba(0,0,0,0.9) 100%);
+    transition-duration: 0.4s; */
+    
+   
+}
+ 
+/*  when i add the over lay on its take away the link the event category */
+ /* .pic1 .overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #63A69A;
+    opacity: 0.6;
+} */
+
+/* .pic1:hover {
+    mask-image: none;
+    
+} */
+
+.pic2 {
+    background-image: url(img/bday1.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    text-align: center;
+}
+
+
+.pic3 {
+    background-image: url(img/preg2.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    text-align: center;
+}
+
+
+.pic4 {
+    background-image: url(img/newborn2.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    text-align: center;
+}
+
+
+.pic5 {
+    background-image: url(img/port7.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    text-align: center;
+}
+
+
+.pic6 {
+    background-image: url(img/fash8.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+    text-align: center;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: auto auto;
 }
