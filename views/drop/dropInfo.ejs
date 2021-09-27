@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/jquery.flipster.min.css">
     <title>Document</title>
 </head>
 <body class="info-page">
@@ -26,16 +27,46 @@
 
 
 
-
-    <div class="hero-info">
-        <h1>Photographer Info Page <%= thePhotographer.name %> </h1>
-        <img class="select-pic" src="<%= thePhotographer.picture %>" >
-    
-    
-        <a href="/booking/<%= thePhotographer._id %>/new">Book Consult</a>
+    <div class="hero-info1">
+        <div class="carousel">
+            <ul>
+                <li><img src="/img/img1.jpg"></li>
+                <li><img src="/img/img2.jpg"></li>
+                <li><img src="/img/img3.jpg"></li>
+                <li><img src="/img/img4.jpg"></li>
+                <li><img src="/img/img5.jpg"></li>
+                <li><img src="/img/img6.jpg"></li>
+                <li><img src="/img/img7.jpg"></li>
+                <li><img src="/img/img8.jpg"></li>
+                <li><img src="/img/img10.jpg"></li>
+            </ul>
+        </div>
     </div>
 
 
+
+
+
+<!-- 
+    <div class="hero-info2">
+        <div class="text-box2">
+            <img class="select-pic" src="<%= thePhotographer.picture %>">
+            <section class="articlename"><h2><%= thePhotographer.name %></h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio temporibus in corrupti voluptatem dolores placeat consequuntur, quaerat dolor ex ipsam laboriosam? Magnam necessitatibus minima corporis architecto nisi tempora eaque ipsa nesciunt laborum dolore dolor, consequuntur tempore neque. Labore atque perferendis tempore laudantium totam quo, animi natus soluta fuga architecto, unde quis eveniet id. Quod quaerat repellat ratione quas perspiciatis asperiores aliquam quidem eius, laudantium temporibus commodi dolorum, obcaecati tempore distinctio non. Ut voluptate nam assumenda, laboriosam magnam atque sunt facere.
+                <br>
+                <a class='row2' href="/booking/<%= thePhotographer._id %>/new">Book Consult</a>
+            </section>
+            
+        </div>
+    </div> -->
+
+    
+    
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/jquery.flipster.min.js"></script>
+
+<script>
+    $('.carousel').flipster();
+</script>
 
 </body>
 </html>

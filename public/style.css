@@ -25,6 +25,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     padding: 5px 0;;
+    font-family: 'Krona One';
 
 }
 
@@ -177,6 +178,7 @@ nav ul li a:hover::after {
 .content {
     text-decoration: none;
     font-size: 25px;
+    font-family: 'Krona One';
     color: #fff;
     position: absolute;
     z-index: 3;
@@ -392,6 +394,7 @@ nav ul li a:hover::after {
     grid-template-columns: auto auto;
     display: inline-block;
     background-color: #8C5E54;
+    font-family: 'Krona One';
 }
 
   
@@ -430,16 +433,65 @@ nav ul li a:hover::after {
 
 
 .infoPage-container {
-    background-image: url("img/landing02.jpg");
+    background-image: url("img/landing03.jpg");
     width: 100%;
     height: 700px;
     background-size: cover;
     background-position: center; 
 }
       
-.hero-select {
+.hero-info2 {
     display: grid;
     grid-template-columns: auto auto;
     display: inline-block;
-    
+    background-color: #102613;
+    font-family: 'Krona One';
+}
+
+
+.select-pic{
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 500px;
+}
+
+.row2 {
+    text-decoration: none;
+    color: #fff;
+    /* background-color: #fff; */
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid #e7e7e7;
+}
+
+.row2:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Image Gallery */
+
+.info-page{
+    margin: 0;
+    padding: 0;
+}
+
+.hero-info1 {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    overflow: hidden;
+}
+
+.carousel {
+    width: 300px;
+    margin: 100px auto 0;
+    overflow: visible;
 }
