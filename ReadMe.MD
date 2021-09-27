@@ -4,7 +4,7 @@
 
 Scoop
 
-The Drop is an website that you can go to find and book with black own photographers. The photographers are place in categories by events to make it easy for the user to narrow down their choices. Once you are on the photographers info page you are able to view their workand have the option to book a consultation with them.
+The Drop is an website that you can go to find and book with black own photographers. The photographers are place in categories by events to make it easy for the user to narrow down their choices. Once you are on the photographers info page you are able to view their work and have the option to book a consultation with them.
 
 ## User Story  
 
