@@ -5,46 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/415e408166.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body class="new">
+      
+    <div class="new-container">
         <nav>
+            <a href="/"><img src="/img/logo1.png" class="logo"></a>
             <ul>
-                <li><a href="/">Landing Page</a></li>
                 <li><a href="/photographer/events">Events</a></li>
                 <li><a href="/photographer/all-photographers">All Photographer</a></li>
             </ul>
         </nav>
-    </header>
 
-
-
-     <h1>Book a Consult with <%= thePhotographer.name %> </h1>
-
-
-
-     <form action="/booking" method="POST">
-        <input type="text" name="photographer" value="<%= thePhotographer._id %>" hidden>
-        <div>
-            <input name="name" type="text">
-            <label for="name">Name:</label>
-        </div>
-        <div>
-            <input name="phone" type="text">
-            <label for="phone">Phone:</label>
-        </div>
-        <div>
-            <input name="email" type="text">
-            <label for="email">Email:</label>
-        </div>
-        <div>
-            <textarea name="visionSummary" id="" cols="30" rows="10"></textarea>
-            <label for="visionSummary">Vision Summary:</label>
-        </div>
-        <input type="submit" value="Book Appointment">
         
-    </form>
+        <h1 class="title1">The</h1>
+        <h1 class="title2">Drop</h1>
+        <h2 class="text">Book a Consult with <%= thePhotographer.name %></h2>
+        
+        
+        
+        
+        <div class="hero-new">
+            <form action="/booking" method="POST">
+                <input type="text" name="photographer" value="<%= thePhotographer._id %>" hidden>
+                <div class="row-new">
+                    <div class="input-group">
+                        <input name="name" id="name" type="text" required>
+                        <label for="name"><i class="fas fa-user"></i>Name</label>
+                    </div>
+                    <div class="input-group">
+                        <input name="phone" id="phone" type="text" required>
+                        <label for="phone"><i class="fas fa-phone-square-alt"></i>Phone</label>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <input name="email" id="email" type="text" required>
+                    <label for="email"><i class="fas fa-envelope"></i>Email</label>
+                </div>
+                <div class="input-group">
+                    <textarea name="visionSummary" id="message" rows="8" required></textarea>
+                    <label for="visionSummary"><i class="fas fa-comments"></i>Vision Summary</label>
+                </div>
+                <button type="submit">SUBMIT<i class="fas fa-paper-plane"></i></button>
+            </form>
+        </div>
+    </div>
+            
+
+
+ 
+
 
 
 

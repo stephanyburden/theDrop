@@ -7,29 +7,39 @@
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
 </head>
-<body>
-    <header>
+<body class="show">
+    
+    <div class="show-container">
         <nav>
+            <a href="/"><img src="/img/logo1.png" class="logo"></a>
             <ul>
-                <li><a href="/">Landing Page</a></li>
                 <li><a href="/photographer/events">Events</a></li>
                 <li><a href="/photographer/all-photographers">All Photographer</a></li>
             </ul>
         </nav>
-    </header>
+        
+        
+        <h1 class="title1">The</h1>
+        <h1 class="title2">Drop</h1>
+        <h2 class="text"> Confirmation Page</h2>
+    </div>
+       
+        <div class="show-text">
+            <h1>Confirmation Message </h1>
+            <p>Your request to book a consult with <strong><%= photographer.name %></strong> has been sent.</p>
+            <p><strong><%= photographer.name %></strong> will get in contact with you within the next 24 to 48 hours.</p>
+            <h3>Message Review:</h3>
+            <p>Clients Name: <%= oneBooking.name %></p>
+            <p>Clients Phone: <%= oneBooking.phone %></p>
+            <p>Clients Email: <%= oneBooking.email %></p>
+            <p>Clients Vision Summary: <%= oneBooking.visionSummary %></p>
+            
+            
+            <p>Thank you for choosing The Drop.</p>
+        </div>
 
-
-    <h1>Confirmation Message </h1>
-    <p>Your requested to book a consult with <strong><%= photographer.name %></strong> has been sent.</p>
-    <p><strong><%= photographer.name %></strong> will get in contact with you with in the next 24 to 48 hours.</p>
-    <h3>Message Review</h3>
-    <p>Clients Name: <%= oneBooking.name %></p>
-    <p>Clients Phone: <%= oneBooking.phone %></p>
-    <p>Clients Email: <%= oneBooking.email %></p>
-    <p>Clients Vision Summary: <%= oneBooking.visionSummary %></p>
-
-
-    <p>Thank you for booking using The Drop.</p>
+</body>
+</html>
      
 
 
@@ -47,6 +57,3 @@
 
 
 
-
-</body>
-</html>
