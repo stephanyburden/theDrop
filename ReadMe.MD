@@ -31,8 +31,8 @@ The Drop is an website that you can go to find and book with black own photograp
 
 ## Wireframe 
 
-![Image of Wireframe](./public/img/wireframe)
-![Image of ERD](.img/ERD)
+![Image of Wireframe](/public/img/wireframe.png)
+![Image of ERD](/public/img/ERD.png)
 
 
 ## Technologies 
