@@ -1,4 +1,5 @@
 // -- Required Modules -- //
+require('dotenv').config();
 const express = require('express');
 //const methodOverride = require('method-methodOverride');
 const rowdy = require('rowdy-logger');
@@ -8,7 +9,7 @@ const bookingController = require('./controller/bookingController');
 
 // -- Configuration -- // 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 const rowdyResults = rowdy.begin(app);
 app.use(express.urlencoded({ extended: false }));
 
